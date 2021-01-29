@@ -1,2 +1,22 @@
-# form-saver
-Thinks about the UX, i made this small library to save the inputs, selects and textarea in localStorage, so if anything happens with the user's browser, he doesn't need to fill all over again.
+### Form Saver ### 
+
+This is a library to save all forms into the local storage.
+Sometimes we can't finish to fill a form right alway, but then
+we need to fill the entire form again, or maybe the connection
+get lost, the battery dies and a bunch of other situations.
+
+However, with this library, no matter what happens, when the user 
+comes back to your website, the form will be filled with the
+information he had put on it.
+
+#### Availables methods ####
+
+```formSaver.clear()``` 
+This method clear the entire formSaver from local storage.
+You can pass the form ID as a parameter to clear just that
+especific form. (formSaver.clear("form-id"))
+
+```formSaver.get()``` 
+This method get the entire formSaver from local storage.
+You can pass the form ID as a parameter to get just that
+especific form. (formSaver.get("form-id"))
